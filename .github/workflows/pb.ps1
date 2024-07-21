@@ -1,4 +1,4 @@
 Write-Host "Hello, World!"
 Get-Date
-Select-String "I am a donkey in a monkey"
+"Hello","HELLO","hi","why" | Select-String -Pattern "HELLO" -CaseSensitive
 Write-Host "done"
