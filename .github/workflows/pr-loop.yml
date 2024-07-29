@@ -13,3 +13,10 @@ jobs:
       - name: run e2e pipeline test
         run: . ./.github/workflows/pb.ps1
         shell: pwsh
+
+      - uses: actions/checkout@master
+      - name: Bump version and push tag
+        uses: laputansoft/github-tag-action@v4.6
+        with:
+          #github_token: ${{ env.github-token }}
+          tag: ${{ steps.package-version.outputs.version }}   
