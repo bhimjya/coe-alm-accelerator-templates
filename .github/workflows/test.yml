@@ -20,4 +20,4 @@ jobs:
 
       # Print result using the action output.
       - run: |
-        echo "Tag already present: ${{ steps.tag_create.outputs.tag_exists }}"
+            echo "Tag already present: ${{ steps.tag_create.outputs.tag_exists }}"
