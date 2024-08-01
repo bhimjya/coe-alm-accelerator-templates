@@ -30,5 +30,7 @@ jobs:
           # You can change the name of the tag with this input.
           # Default: 'latest'
           tag-name: ${{env.PR_NUMBER}}
+          run: sh create_git_tag.sh
+
       
           # If a description is provided, the       
